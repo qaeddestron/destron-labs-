@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Destron Labs Intelligence — Technical whitepapers, smart contract security teardowns, and algorithmic trading research.">
+  <title>Research & Intelligence — Destron Labs</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A0D14'/%3E%3Cpath d='M8 8h10a6 6 0 0 1 6 6v0a6 6 0 0 1-6 6H8V8z' fill='none' stroke='%2320EEDA' stroke-width='2.5'/%3E%3Ccircle cx='14' cy='14' r='2' fill='%2320EEDA'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function() {
+      const saved = localStorage.getItem('destron_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', saved);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo-horizontal.png" alt="Destron Labs" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span class="logo-t" style="display:none;">DESTRON LABS</span>
+    </a>
+    <ul class="nl" id="nav-links">
+      <li><a href="index.html">Platform</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <a href="contact.html" class="nb">START YOUR PROJECT</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- TELEMETRY RIBBON -->
+  <div class="telemetry-strip">
+    <div class="telemetry-inner">
+      <div class="telemetry-item"><span class="telemetry-pulse"></span><span>RESEARCH LABS: <strong>OPEN ACCESS INTELLIGENCE</strong></span></div>
+      <div class="telemetry-item"><span>FOCUS: <strong>MEV MITIGATION · QUANTITATIVE RISK · FORMAL METHODS</strong></span></div>
+      <div class="telemetry-item"><span>PUBLICATION CADENCE: <strong>MONTHLY PEER-REVIEWED BRIEFS</strong></span></div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" style="min-height: 480px; padding: 80px 48px;">
+    <div class="hi">
+      <div class="status-pill"><span class="pulse-cyan"></span><span>DESTRON LABS INTELLIGENCE</span></div>
+      <h1 class="hw">ENGINEERING<br>RESEARCH</h1>
+      <p class="ht">DEEP DIVES INTO PROTOCOL RISK, MEV, AND DISTRIBUTED SYSTEMS.</p>
+      <p class="h-sub">We publish our internal research notes, mathematical security proofs, and architectural post-mortems to advance the boundaries of open-source engineering.</p>
+    </div>
+  </section>
+
+  <!-- RESEARCH GRID WITH FILTER -->
+  <section class="sec sec-dk">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">ALL PAPERS (4)</button>
+      <button class="filter-btn" data-filter="mev">MEV & ROUTING</button>
+      <button class="filter-btn" data-filter="quant">QUANT RISK</button>
+      <button class="filter-btn" data-filter="audit">SECURITY AUDITS</button>
+      <button class="filter-btn" data-filter="cloud">DISTRIBUTED CLOUD</button>
+    </div>
+
+    <div class="res-grid">
+      <!-- PAPER 1 -->
+      <article class="res-card" data-category="mev">
+        <div class="res-meta">
+          <span class="res-tag">MEV & DEFI</span>
+          <span>8 MIN READ</span>
+        </div>
+        <h3 class="res-title">Eliminating MEV Slippage in Multi-Hop Cross-Chain Swaps</h3>
+        <p class="res-desc">
+          An empirical analysis of sandwich attacks targeting multi-chain bridge routers. We evaluate Li.Fi, Socket, and 1inch execution paths under peak mempool congestion, presenting our dynamic batching and commit-reveal routing protocol that reduces MEV leakage by 92.4%.
+        </p>
+        <span class="res-link">READ RESEARCH PAPER →</span>
+      </article>
+
+      <!-- PAPER 2 -->
+      <article class="res-card" data-category="quant">
+        <div class="res-meta">
+          <span class="res-tag">QUANT RISK</span>
+          <span>11 MIN READ</span>
+        </div>
+        <h3 class="res-title">Fractional Kelly Allocation in Binary Prediction Markets</h3>
+        <p class="res-desc">
+          How continuous meteorological distributions map onto discrete binary options on Polymarket. We prove why full-Kelly stake sizing leads to catastrophic drawdown under model probability miscalibration and present an adaptive half-Kelly allocation formula.
+        </p>
+        <span class="res-link">READ RESEARCH PAPER →</span>
+      </article>
+
+      <!-- PAPER 3 -->
+      <article class="res-card" data-category="cloud">
+        <div class="res-meta">
+          <span class="res-tag">DISTRIBUTED CLOUD</span>
+          <span>7 MIN READ</span>
+        </div>
+        <h3 class="res-title">Scaling Financial Telegram Bots: 10,000+ Req/Sec on Railway</h3>
+        <p class="res-desc">
+          Architectural breakdown of the VoiceEx remittance engine. How we leveraged Go goroutines, distributed Redis lock primitives, and idempotent webhook multiplexing to achieve zero-downtime execution under volatile traffic spikes.
+        </p>
+        <span class="res-link">READ RESEARCH PAPER →</span>
+      </article>
+
+      <!-- PAPER 4 -->
+      <article class="res-card" data-category="audit">
+        <div class="res-meta">
+          <span class="res-tag">FORMAL VERIFICATION</span>
+          <span>14 MIN READ</span>
+        </div>
+        <h3 class="res-title">Formal Verification vs Property Fuzzing: A Benchmark</h3>
+        <p class="res-desc">
+          We benchmarked Halmos symbolic execution against Medusa and Echidna property-based fuzzers across 10 DeFi lending protocols. A tactical guide on when to deploy mathematical proofs versus stateful fuzzing to prevent multi-million dollar exploits.
+        </p>
+        <span class="res-link">READ RESEARCH PAPER →</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- DISPATCH SIGNUP -->
+  <section class="sec">
+    <div class="cw" style="text-align:center;">
+      <span class="ey">// INTELLIGENCE DISPATCH</span>
+      <h2 class="sh">Get our research before it's public.</h2>
+      <p class="ss" style="margin: 0 auto 36px;">Subscribe to the Destron Labs monthly technical dispatch. No marketing fluff — only rigorous architecture teardowns and open-source code.</p>
+      
+      <form class="cf" style="max-width: 540px; margin: 0 auto; padding: 28px;" onsubmit="return false">
+        <div class="ff">
+          <label for="f-email-sub">WORK EMAIL</label>
+          <input id="f-email-sub" type="email" placeholder="vitalik@ethereum.org" required>
+        </div>
+        <button type="submit" class="bsub" style="width: 100%; margin-top: 10px;">SUBSCRIBE TO DISPATCH</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo-horizontal.png" alt="Destron Labs" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <span class="logo-t" style="display:none;">DESTRON LABS</span>
+        </a>
+        <p>Custom engineering for a borderless world. Deploying elite distributed squads for DeFi, enterprise cloud, and AI systems.</p>
+      </div>
+      <div class="footer-col">
+        <h4>PLATFORM</h4>
+        <ul>
+          <li><a href="services.html">Services & Solutions</a></li>
+          <li><a href="work.html">Case Studies</a></li>
+          <li><a href="research.html">Technical Research</a></li>
+          <li><a href="about.html">Operating Model</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>RESEARCH PAPERS</h4>
+        <ul>
+          <li><a href="#">MEV Slippage Analysis</a></li>
+          <li><a href="#">Fractional Kelly Risk</a></li>
+          <li><a href="#">Telegram Concurrency</a></li>
+          <li><a href="#">Formal Verification</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>NETWORK</h4>
+        <ul>
+          <li><a href="https://x.com/destron_labs" target="_blank" rel="noopener">Twitter / X</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="contact.html">Telegram Channel</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Destron Labs. All Rights Reserved. Global Operations.</p>
+      <div class="footer-status"><span class="telemetry-pulse"></span><span>ALL NODES OPERATIONAL · 99.99% UPTIME</span></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

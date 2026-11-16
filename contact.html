@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Destron Labs — Submit an engineering RFP, schedule an architectural discovery call, or engage our senior squads.">
+  <title>Contact & Inquiries — Destron Labs</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A0D14'/%3E%3Cpath d='M8 8h10a6 6 0 0 1 6 6v0a6 6 0 0 1-6 6H8V8z' fill='none' stroke='%2320EEDA' stroke-width='2.5'/%3E%3Ccircle cx='14' cy='14' r='2' fill='%2320EEDA'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function() {
+      const saved = localStorage.getItem('destron_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', saved);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo-horizontal.png" alt="Destron Labs" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span class="logo-t" style="display:none;">DESTRON LABS</span>
+    </a>
+    <ul class="nl" id="nav-links">
+      <li><a href="index.html">Platform</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <a href="contact.html" class="nb">START YOUR PROJECT</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- TELEMETRY RIBBON -->
+  <div class="telemetry-strip">
+    <div class="telemetry-inner">
+      <div class="telemetry-item"><span class="telemetry-pulse"></span><span>RFP QUEUE: <strong>OPEN (MEDIAN RESPONSE &lt; 12 HOURS)</strong></span></div>
+      <div class="telemetry-item"><span>DIRECT ROUTING: <strong>PRINCIPAL ARCHITECT REVIEW</strong></span></div>
+      <div class="telemetry-item"><span>CONFIDENTIALITY: <strong>MUTUAL NDA COMPLIANT</strong></span></div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" style="min-height: 440px; padding: 70px 48px 50px;">
+    <div class="hi">
+      <div class="status-pill"><span class="pulse-cyan"></span><span>INSTITUTIONAL PROJECT INQUIRY</span></div>
+      <h1 class="hw">INITIALIZE<br>DISCOVERY</h1>
+      <p class="ht">CONNECT DIRECTLY WITH SENIOR PRINCIPAL ARCHITECTS.</p>
+      <p class="h-sub">Tell us what you're building. Within 12 hours, you'll receive a direct response from our principal engineering squad to schedule an architectural deep-dive.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT / RFP SECTION -->
+  <section class="sec sec-dk">
+    <div class="cw">
+      <form class="cf" id="rfp-form" onsubmit="return false">
+        <div class="fr">
+          <div class="ff">
+            <label for="f-name">YOUR NAME *</label>
+            <input id="f-name" type="text" placeholder="Dr. Alex Vance" autocomplete="name" required>
+          </div>
+          <div class="ff">
+            <label for="f-email">WORK EMAIL *</label>
+            <input id="f-email" type="email" placeholder="alex@foundation.org" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="fr">
+          <div class="ff">
+            <label for="f-org">ORGANIZATION / PROTOCOL</label>
+            <input id="f-org" type="text" placeholder="Nexus Financial Ltd">
+          </div>
+          <div class="ff">
+            <label for="f-service">CORE DISCIPLINE</label>
+            <select id="f-service">
+              <option>DeFi & Smart Contract Protocols</option>
+              <option>AI Models & Prediction Market Scanners</option>
+              <option>High-Concurrency Cloud & Telegram Remittance</option>
+              <option>Full-Team Engineering Augmentation</option>
+              <option>Formal Verification & Security Audit</option>
+              <option>Custom Enterprise Software</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="fr">
+          <div class="ff">
+            <label for="f-budget">ESTIMATED CAPITAL BUDGET</label>
+            <select id="f-budget">
+              <option>$20,000 – $40,000 (Rapid Sprint MVP)</option>
+              <option>$40,000 – $80,000 (Complete Protocol Suite)</option>
+              <option>$80,000 – $150,000+ (Enterprise Architecture)</option>
+              <option>Strategic Venture / Retainer Partnership</option>
+            </select>
+          </div>
+          <div class="ff">
+            <label for="f-timeline">TARGET TIMELINE</label>
+            <select id="f-timeline">
+              <option>Immediate (Within 2 Weeks)</option>
+              <option>Upcoming Month</option>
+              <option>Q1 / Q2 2027</option>
+              <option>Long-Term Advisory</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="ff">
+          <label for="f-msg">PROJECT SPECIFICATIONS & REQUIREMENTS *</label>
+          <textarea id="f-msg" placeholder="Describe the architectural challenge, target chain/stack, throughput requirements, and deliverables..." required></textarea>
+        </div>
+
+        <button type="submit" class="bsub" id="sb">INITIALIZE PROJECT DISCOVERY</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- DIRECT CONTACT CHANNELS -->
+  <section class="sec">
+    <div class="sec-header center">
+      <span class="ey">// SECURE CHANNELS</span>
+      <h2 class="sh">Direct Communications</h2>
+      <p class="ss" style="margin: 0 auto;">For confidential institutional inquiries, vulnerability disclosures, or direct executive scheduling.</p>
+    </div>
+
+    <div class="svgr">
+      <div class="svc">
+        <span class="wt2">EMAIL DISPATCH</span>
+        <h3 class="st">Institutional Inquiries</h3>
+        <p class="sd">Direct line to our managing partners and lead architects.</p>
+        <a href="mailto:engineering@destronlabs.com" class="res-link">engineering@destronlabs.com →</a>
+      </div>
+
+      <div class="svc">
+        <span class="wt2">ENCRYPTED MESSAGING</span>
+        <h3 class="st">Telegram Protocol Desk</h3>
+        <p class="sd">Instant access for emergency protocol audits and rapid dev onboarding.</p>
+        <a href="https://t.me/destron_institutional" target="_blank" rel="noopener" class="res-link">@destron_institutional →</a>
+      </div>
+
+      <div class="svc">
+        <span class="wt2">PUBLIC VERIFICATION</span>
+        <h3 class="st">Official Twitter / X</h3>
+        <p class="sd">Engineering announcements, research papers, and live telemetry.</p>
+        <a href="https://x.com/destron_labs" target="_blank" rel="noopener" class="res-link">@destron_labs →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec sec-dk">
+    <div class="sec-header">
+      <span class="ey">// FREQUENTLY ASKED QUESTIONS</span>
+      <h2 class="sh">Institutional FAQ</h2>
+      <p class="ss">Clear answers on how we operate, engage, and deliver.</p>
+    </div>
+
+    <div class="svgr">
+      <div class="svc">
+        <h3 class="st">How fast can a Destron squad spin up?</h3>
+        <p class="sd">Because our global mesh maintains active senior engineers on standby, we can complete architectural onboarding and begin commit velocity within 5 business days of contract execution.</p>
+      </div>
+
+      <div class="svc">
+        <h3 class="st">Do you write custom audits or use external auditors?</h3>
+        <p class="sd">We perform comprehensive in-house formal verification, invariant testing, and adversarial fuzzing. For mainnet protocols with >$10M TVL, we also coordinate with tier-1 external audit partners.</p>
+      </div>
+
+      <div class="svc">
+        <h3 class="st">Can your engineers integrate into our existing team?</h3>
+        <p class="sd">Yes. We frequently deploy autonomous engineering pods or fractional senior staff architects directly into our clients' GitHub repositories, Slack channels, and daily standups.</p>
+      </div>
+
+      <div class="svc">
+        <h3 class="st">Who owns the intellectual property and code?</h3>
+        <p class="sd">You retain 100% full intellectual property and commercial copyright over all custom code, smart contracts, architectures, and documentation generated during our engagement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo-horizontal.png" alt="Destron Labs" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <span class="logo-t" style="display:none;">DESTRON LABS</span>
+        </a>
+        <p>Custom engineering for a borderless world. Deploying elite distributed squads for DeFi, enterprise cloud, and AI systems.</p>
+      </div>
+      <div class="footer-col">
+        <h4>PLATFORM</h4>
+        <ul>
+          <li><a href="services.html">Services & Solutions</a></li>
+          <li><a href="work.html">Case Studies</a></li>
+          <li><a href="research.html">Technical Research</a></li>
+          <li><a href="about.html">Operating Model</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>DIRECT HUBS</h4>
+        <ul>
+          <li><a href="#">New York [UTC-5]</a></li>
+          <li><a href="#">London [UTC+0]</a></li>
+          <li><a href="#">Zurich [UTC+1]</a></li>
+          <li><a href="#">Lagos [UTC+1]</a></li>
+          <li><a href="#">Singapore [UTC+8]</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>NETWORK</h4>
+        <ul>
+          <li><a href="https://x.com/destron_labs" target="_blank" rel="noopener">Twitter / X</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="contact.html">Telegram Channel</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Destron Labs. All Rights Reserved. Global Operations.</p>
+      <div class="footer-status"><span class="telemetry-pulse"></span><span>ALL NODES OPERATIONAL · 99.99% UPTIME</span></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

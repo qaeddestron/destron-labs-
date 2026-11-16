@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Destron Labs Portfolio & Case Studies — Production-tested DeFi aggregators, Telegram remittance engines, and AI prediction market systems.">
+  <title>Case Studies & Portfolio — Destron Labs</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A0D14'/%3E%3Cpath d='M8 8h10a6 6 0 0 1 6 6v0a6 6 0 0 1-6 6H8V8z' fill='none' stroke='%2320EEDA' stroke-width='2.5'/%3E%3Ccircle cx='14' cy='14' r='2' fill='%2320EEDA'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function() {
+      const saved = localStorage.getItem('destron_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', saved);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo-horizontal.png" alt="Destron Labs" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span class="logo-t" style="display:none;">DESTRON LABS</span>
+    </a>
+    <ul class="nl" id="nav-links">
+      <li><a href="index.html">Platform</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <a href="contact.html" class="nb">START YOUR PROJECT</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- TELEMETRY RIBBON -->
+  <div class="telemetry-strip">
+    <div class="telemetry-inner">
+      <div class="telemetry-item"><span class="telemetry-pulse"></span><span>PORTFOLIO STATUS: <strong>100% PRODUCTION VERIFIED</strong></span></div>
+      <div class="telemetry-item"><span>CUMULATIVE VOLUME ROUTED: <strong>$185M+</strong></span></div>
+      <div class="telemetry-item"><span>CRITICAL VULNERABILITIES: <strong>ZERO (0)</strong></span></div>
+      <div class="telemetry-item"><span>CLIENT SATISFACTION: <strong>100% RETENTION</strong></span></div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" style="min-height: 480px; padding: 80px 48px;">
+    <div class="hi">
+      <div class="status-pill"><span class="pulse-cyan"></span><span>SELECT CLIENT DEPLOYMENTS</span></div>
+      <h1 class="hw">SHIPPED<br>ARCHITECTURE</h1>
+      <p class="ht">BATTLE-TESTED UNDER HEAVY CAPITAL & CONCURRENCY.</p>
+      <p class="h-sub">Explore our production engineering track record across algorithmic decentralized finance, distributed payment gateways, and predictive artificial intelligence systems.</p>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES WITH FILTER -->
+  <section class="sec sec-dk">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">ALL PROTOCOLS (5)</button>
+      <button class="filter-btn" data-filter="defi">DEFI & WEB3</button>
+      <button class="filter-btn" data-filter="fintech">FINTECH & PAYMENTS</button>
+      <button class="filter-btn" data-filter="ai">AI & PREDICTION</button>
+      <button class="filter-btn" data-filter="cloud">DISTRIBUTED CLOUD</button>
+    </div>
+
+    <div class="wgr">
+      <!-- ONEX -->
+      <div class="wc" id="onex" data-category="defi">
+        <span class="wt2">BLOCKCHAIN · DEFI · MULTI-HOP</span>
+        <h3 class="wn">Onex Protocol</h3>
+        <p class="wd">
+          <strong>The Objective:</strong> Overcome severe multi-chain liquidity fragmentation across Ethereum, Arbitrum, Optimism, Base, and Polygon without sacrificing transaction speed or exposing users to bridge exploits.<br><br>
+          <strong>The Solution:</strong> Destron Labs engineered a modular DEX meta-aggregator routing transactions dynamically through Li.Fi, Socket, and 1inch contracts. Built-in atomic execution safeguards guarantee trade execution or revert, with an integrated 0.05% protocol monetization mechanism and Supabase off-chain loyalty engine.
+        </p>
+        <div class="w-metrics">
+          <div><div class="w-metric-val">$140M+</div><div class="w-metric-lbl">Routing Capacity</div></div>
+          <div><div class="w-metric-val">&lt; 140ms</div><div class="w-metric-lbl">Quote Latency</div></div>
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Solidity</span>
+          <span class="tech-tag">Foundry</span>
+          <span class="tech-tag">Li.Fi</span>
+          <span class="tech-tag">Socket</span>
+          <span class="tech-tag">Supabase</span>
+        </div>
+      </div>
+
+      <!-- VOICEEX -->
+      <div class="wc" id="voiceex" data-category="fintech cloud">
+        <span class="wt2">FINTECH · TELEGRAM · GO</span>
+        <h3 class="wn">VoiceEx Bridge</h3>
+        <p class="wd">
+          <strong>The Objective:</strong> Eliminate predatory 6-12% bank remittance wire fees and 3-5 day settlement latency for Nigerian diaspora members transferring USD to local family accounts.<br><br>
+          <strong>The Solution:</strong> Architected a high-concurrency Telegram bot runtime in Go hosted on Railway. The system interfaces directly with multi-sig escrow contracts, locks in live foreign exchange rates, and delivers instant NGN bank deposits via local banking clearing rails in under 30 seconds.
+        </p>
+        <div class="w-metrics">
+          <div><div class="w-metric-val">99.98%</div><div class="w-metric-lbl">Bot Uptime</div></div>
+          <div><div class="w-metric-val">&lt; 30s</div><div class="w-metric-lbl">Settlement Time</div></div>
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Go</span>
+          <span class="tech-tag">Telegram Bot API</span>
+          <span class="tech-tag">Railway</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">Redis</span>
+        </div>
+      </div>
+
+      <!-- WEATHEREDGE -->
+      <div class="wc" id="weatheredge" data-category="ai">
+        <span class="wt2">AI · PREDICTION MARKETS · QUANT</span>
+        <h3 class="wn">WeatherEdge AI</h3>
+        <p class="wd">
+          <strong>The Objective:</strong> Systematically capture inefficiencies in prediction markets (Polymarket) where weather and hurricane probabilities deviate substantially from meteorological reality.<br><br>
+          <strong>The Solution:</strong> Developed a high-frequency Python pipeline that ingests raw NOAA GFS, ECMWF, and ensemble model forecast feeds, compares them against Polymarket orderbook quotes, and computes optimal risk stakes via a fractional Kelly Criterion allocation engine.
+        </p>
+        <div class="w-metrics">
+          <div><div class="w-metric-val">+24.6%</div><div class="w-metric-lbl">Simulated Edge</div></div>
+          <div><div class="w-metric-val">8%</div><div class="w-metric-lbl">Max Drawdown Cap</div></div>
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">NumPy</span>
+          <span class="tech-tag">FastAPI</span>
+          <span class="tech-tag">Polymarket CLOB</span>
+          <span class="tech-tag">Docker</span>
+        </div>
+      </div>
+
+      <!-- HYPERLEND -->
+      <div class="wc" id="hyperlend" data-category="defi">
+        <span class="wt2">DEFI · LENDING · FORMAL AUDIT</span>
+        <h3 class="wn">HyperLend Protocol</h3>
+        <p class="wd">
+          <strong>The Objective:</strong> Build a permissionless isolated-lending platform immune to cross-collateral contagion risk caused by volatile long-tail token collapses.<br><br>
+          <strong>The Solution:</strong> Implemented segregated borrowing markets with dynamic kink-based interest rate algorithms. The protocol employs Pyth and Chainlink dual-oracle failovers and high-speed automated liquidation keepers, mathematically proven safe using Halmos formal verification.
+        </p>
+        <div class="w-metrics">
+          <div><div class="w-metric-val">$45M+</div><div class="w-metric-lbl">Stress-Tested TVL</div></div>
+          <div><div class="w-metric-val">0</div><div class="w-metric-lbl">Bad Debt Occurrences</div></div>
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Solidity</span>
+          <span class="tech-tag">Halmos</span>
+          <span class="tech-tag">Pyth Oracles</span>
+          <span class="tech-tag">Chainlink</span>
+        </div>
+      </div>
+
+      <!-- AETHERMESH -->
+      <div class="wc" id="aethermesh" data-category="cloud">
+        <span class="wt2">DISTRIBUTED CLOUD · TELEMETRY</span>
+        <h3 class="wn">AetherMesh Telemetry</h3>
+        <p class="wd">
+          <strong>The Objective:</strong> Provide sub-millisecond node monitoring and network anomaly detection for a globally distributed algorithmic trading network across 12 colocation data centers.<br><br>
+          <strong>The Solution:</strong> Engineered a distributed time-series telemetry hub utilizing Go and ClickHouse. Custom WebSocket multiplexing streams 50,000+ metric data points per second to client dashboards with sub-30ms render overhead.
+        </p>
+        <div class="w-metrics">
+          <div><div class="w-metric-val">&lt; 30ms</div><div class="w-metric-lbl">Stream Latency</div></div>
+          <div><div class="w-metric-val">50k/sec</div><div class="w-metric-lbl">Events Processed</div></div>
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Go</span>
+          <span class="tech-tag">ClickHouse</span>
+          <span class="tech-tag">WebSockets</span>
+          <span class="tech-tag">Kubernetes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="sec">
+    <div class="cw" style="text-align:center;">
+      <span class="ey">// YOUR PROTOCOL NEXT</span>
+      <h2 class="sh">Ready to deploy battle-tested code?</h2>
+      <p class="ss" style="margin: 0 auto 36px;">From whitepaper concept to production mainnet, we deliver high-velocity technical execution.</p>
+      <a href="contact.html" class="bp">START YOUR PROJECT →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo-horizontal.png" alt="Destron Labs" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <span class="logo-t" style="display:none;">DESTRON LABS</span>
+        </a>
+        <p>Custom engineering for a borderless world. Deploying elite distributed squads for DeFi, enterprise cloud, and AI systems.</p>
+      </div>
+      <div class="footer-col">
+        <h4>PLATFORM</h4>
+        <ul>
+          <li><a href="services.html">Services & Solutions</a></li>
+          <li><a href="work.html">Case Studies</a></li>
+          <li><a href="research.html">Technical Research</a></li>
+          <li><a href="about.html">Operating Model</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>CASE STUDIES</h4>
+        <ul>
+          <li><a href="#onex">Onex DEX Router</a></li>
+          <li><a href="#voiceex">VoiceEx Bridge</a></li>
+          <li><a href="#weatheredge">WeatherEdge AI</a></li>
+          <li><a href="#hyperlend">HyperLend Protocol</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>NETWORK</h4>
+        <ul>
+          <li><a href="https://x.com/destron_labs" target="_blank" rel="noopener">Twitter / X</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="contact.html">Telegram Channel</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Destron Labs. All Rights Reserved. Global Operations.</p>
+      <div class="footer-status"><span class="telemetry-pulse"></span><span>ALL NODES OPERATIONAL · 99.99% UPTIME</span></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
